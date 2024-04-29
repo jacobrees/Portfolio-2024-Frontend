@@ -40,6 +40,7 @@ $fade: color 0.5s ease-in-out;
 
 .navbar-links {
   display: flex;
+  align-items: center;
 }
 
 .navbar-link {
@@ -54,6 +55,12 @@ $fade: color 0.5s ease-in-out;
   color: $base-red;
 }
 
+.navigation-menu {
+  filter: invert(1);
+  width: 50px;
+  display: none;
+}
+
 /* Large devices */
 @media only screen and (max-width: 1200px) {
   /* ...code... */
@@ -66,5 +73,15 @@ $fade: color 0.5s ease-in-out;
 
 /* Small devices */
 @media only screen and (max-width: 768px) {
-  /* ...code... */
+  .navbar-title {
+    font-size: 35px;
+  }
+
+  .navbar-link {
+    display: none;
+  }
+
+  .navigation-menu{
+    display: flex;
+  }
 }
