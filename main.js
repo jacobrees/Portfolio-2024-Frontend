@@ -11,7 +11,7 @@ navLinks.forEach((navLink) => {
     e.preventDefault();
     const id = navLink.textContent.toLowerCase();
     const section = document.getElementById(id);
-    const position = section.offsetTop
+    const position = section.offsetTop;
     window.scrollTo({
       top: position,
       behavior: "smooth",
@@ -24,7 +24,7 @@ mobileNavLinks.forEach((navLink) => {
     e.preventDefault();
     const id = navLink.textContent.toLowerCase();
     const section = document.getElementById(id);
-    const position = section.offsetTop - 80;
+    const position = section.offsetTop;
     window.scrollTo({
       top: position,
       behavior: "smooth",
