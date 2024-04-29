@@ -1,3 +1,8 @@
+$base-color: #121b22;
+$base-red: #ff664d;
+$fade: color 0.5s ease-in-out;
+
+/* XL devices (default) */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +13,7 @@
 .navbar {
   width: 100%;
   height: 120px;
-  background-color: #121B22;
+  background-color: $base-color;
 }
 
 .navbar-container {
@@ -25,11 +30,16 @@
   color: white;
   font-weight: 400;
   font-size: 40px;
+  cursor: pointer;
+  transition: $fade;
+}
+
+.navbar-title:hover {
+  color: $base-red;
 }
 
 .navbar-links {
   display: flex;
-
 }
 
 .navbar-link {
@@ -37,4 +47,24 @@
   padding: 0 10px;
   text-decoration: none;
   font-size: 16px;
+  transition: $fade;
+}
+
+.navbar-link:hover {
+  color: $base-red;
+}
+
+/* Large devices */
+@media only screen and (max-width: 1200px) {
+  /* ...code... */
+}
+
+/* Medium devices */
+@media only screen and (max-width: 992px) {
+  /* ...code... */
+}
+
+/* Small devices */
+@media only screen and (max-width: 768px) {
+  /* ...code... */
 }
